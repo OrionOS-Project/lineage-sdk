@@ -5,7 +5,6 @@
 
 android_library {
     name: "LineagePreferenceLib",
-    min_sdk_version: "30",
     defaults: [
         "SettingsLibDefaults",
     ],
