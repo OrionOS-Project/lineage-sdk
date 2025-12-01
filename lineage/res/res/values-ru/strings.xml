@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">Система LineageOS</string>
+    <string name="lineageos_system_label">Система OrionOS</string>
     <string name="permlab_modifyProfiles">Изменение профилей системы</string>
     <string name="permdesc_modifyProfiles">Приложение сможет изменять настройки системных профилей.</string>
     <string name="permlab_useHardwareFramework">Взаимодействие с оборудованием</string>
@@ -27,9 +27,6 @@
     <string name="profileGroupSMS">Сообщения</string>
     <string name="wildcardProfile">Другие</string>
     <string name="charging_speed">Скорость зарядки</string>
-    <string name="charging_speed_slow">Медленно</string>
-    <string name="charging_speed_fast">Быстро</string>
-    <string name="charging_speed_super_fast">Очень быстро</string>
     <string name="live_display_auto">Автоматически</string>
     <string name="live_display_auto_summary">Автоматическая подстройка цветовой температуры экрана после заката и восхода солнца</string>
     <string name="live_display_off">Отключить</string>
@@ -56,9 +53,9 @@
     <string name="permlab_manageRemotePrefs">управление удаленными параметрами</string>
     <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удаленными параметрами</string>
     <string name="build_date">Дата сборки</string>
-    <string name="lineage_api_level">Версия API LineageOS</string>
-    <string name="lineage_updates">Обновления LineageOS</string>
-    <string name="lineage_version">Версия LineageOS</string>
+    <string name="lineage_api_level">Версия API OrionOS</string>
+    <string name="lineage_updates">Обновления OrionOS</string>
+    <string name="lineage_version">Версия OrionOS</string>
     <string name="lineage_vendor_security_patch">Состояние исправлений безопасности от производителя</string>
     <string name="unknown">Неизвестно</string>
     <string name="app_killed_message">Приложение завершено</string>

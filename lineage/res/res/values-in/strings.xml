@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">Sistem LineageOS</string>
+    <string name="lineageos_system_label">Sistem OrionOS</string>
     <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
     <string name="permdesc_modifyProfiles">Mengizinkan aplikasi untuk mengubah profil sistem.</string>
     <string name="permlab_useHardwareFramework">gunakan hardware framework</string>
@@ -26,10 +26,6 @@
     <string name="profileGroupEmail">Surel</string>
     <string name="profileGroupSMS">SMS</string>
     <string name="wildcardProfile">Lainnya</string>
-    <string name="charging_speed">Kecepatan pengisian</string>
-    <string name="charging_speed_slow">Lambat</string>
-    <string name="charging_speed_fast">Cepat</string>
-    <string name="charging_speed_super_fast">Sangat cepat</string>
     <string name="live_display_auto">Otomatis</string>
     <string name="live_display_auto_summary">Menyesuaikan suhu warna layar secara otomatis setelah matahari terbenam dan terbit</string>
     <string name="live_display_off">Mati</string>
@@ -56,9 +52,9 @@
     <string name="permlab_manageRemotePrefs">mengelola pengaturan jarak jauh</string>
     <string name="permdesc_manageRemotePrefs">Memungkinkan aplikasi untuk mengelola pengaturan jarak jauh</string>
     <string name="build_date">Tanggal pembuatan</string>
-    <string name="lineage_api_level">Tingkat API LineageOS</string>
-    <string name="lineage_updates">Pembaruan LineageOS</string>
-    <string name="lineage_version">Versi LineageOS</string>
+    <string name="lineage_api_level">Tingkat API OrionOS</string>
+    <string name="lineage_updates">Pembaruan OrionOS</string>
+    <string name="lineage_version">Versi OrionOS</string>
     <string name="lineage_vendor_security_patch">Tingkat patch keamanan vendor</string>
     <string name="unknown">Tidak dikenal</string>
     <string name="app_killed_message">Aplikasi dimatikan</string>
@@ -81,6 +77,4 @@
     <string name="charging_control_notification_channel">Kontrol pengisian daya</string>
     <string name="charging_control_notification_title">Kontrol pengisian daya</string>
     <string name="charging_control_notification_cancel_once">Batal</string>
-    <string name="charging_control_notification_content_target">Baterai akan terisi penuh pada %1$s</string>
-    <string name="charging_control_notification_content_target_reached">Baterai penuh</string>
 </resources>

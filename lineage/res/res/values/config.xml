@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -88,10 +88,6 @@
 
          // The notification light has non-adjustable pulsing capability.
          LIGHTS_BREATHING_LED = 256
-
-         // The device's LEDs are on/off only, so brightness controls are
-         // hidden even when RGB is supported.
-         LIGHTS_NO_BRIGHTNESS_CONTROL = 512
 
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
@@ -295,7 +291,7 @@
     <bool name="config_trustLegacyEncryption">false</bool>
 
     <!-- Whether device has a screen with a higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+    <bool name="config_haveHigherAspectRatioScreen">false</bool>
 
     <!-- Button backlight control. Possible values are:
             0 - Not supported

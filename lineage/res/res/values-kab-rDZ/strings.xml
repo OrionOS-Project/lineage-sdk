@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">Anagraw n LineageOS</string>
+    <string name="lineageos_system_label">Anagraw n OrionOS</string>
     <string name="permlab_modifyProfiles">snifel imaɣnuyen unagraw</string>
     <string name="permdesc_modifyProfiles">Sireg asnas ad-isnifel imaɣnuyen unagraw.</string>
     <string name="profileNameDefault">Prédéfini(e)</string>
@@ -23,9 +23,9 @@
     <string name="live_display_day">Ass</string>
     <string name="live_display_night">Iḍ</string>
     <string name="build_date">Azemz n usefsu</string>
-    <string name="lineage_api_level">Aswir n LineageOS API</string>
-    <string name="lineage_updates">Lqem n LineageOS</string>
-    <string name="lineage_version">Lqem n LineageOS</string>
+    <string name="lineage_api_level">Aswir n OrionOS API</string>
+    <string name="lineage_updates">Lqem n OrionOS</string>
+    <string name="lineage_version">Lqem n OrionOS</string>
     <string name="unknown">Arussin</string>
     <string name="trust_feature_name">Trust</string>
 </resources>
