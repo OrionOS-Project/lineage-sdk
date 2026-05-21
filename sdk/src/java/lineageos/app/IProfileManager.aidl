@@ -11,7 +11,7 @@ import android.os.ParcelUuid;
 import orionos.app.NotificationGroup;
 import orionos.app.Profile;
 
-/** {@hide} */
+/** @hide */
 interface IProfileManager
 {
     boolean setActiveProfile(in ParcelUuid profileParcelUuid);
