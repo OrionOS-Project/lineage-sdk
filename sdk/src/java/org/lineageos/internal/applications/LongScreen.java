@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018 The LineageOS project
+ * SPDX-FileCopyrightText: 2018 The OrionOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.applications;
+package org.orionos.internal.applications;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -30,7 +30,7 @@ public class LongScreen {
         final Resources resources = mContext.getResources();
 
         mLongScreenAvailable = resources.getBoolean(
-                org.lineageos.platform.internal.R.bool.config_haveHigherAspectRatioScreen);
+                org.orionos.platform.internal.R.bool.config_haveHigherAspectRatioScreen);
 
         if (!mLongScreenAvailable) {
             return;

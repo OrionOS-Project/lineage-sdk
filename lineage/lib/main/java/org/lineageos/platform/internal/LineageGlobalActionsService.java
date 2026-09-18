@@ -1,15 +1,15 @@
 /*
- * SPDX-FileCopyrightText: 2021-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
-import static lineageos.providers.LineageSettings.Secure.POWER_MENU_ACTIONS;
-import static lineageos.providers.LineageSettings.Secure.getStringForUser;
-import static lineageos.providers.LineageSettings.Secure.putStringForUser;
+import static orionos.providers.LineageSettings.Secure.POWER_MENU_ACTIONS;
+import static orionos.providers.LineageSettings.Secure.getStringForUser;
+import static orionos.providers.LineageSettings.Secure.putStringForUser;
 
-import static org.lineageos.internal.util.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
+import static org.orionos.internal.util.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -20,10 +20,10 @@ import android.os.IBinder;
 import android.os.UserHandle;
 import android.provider.Settings;
 
-import lineageos.app.ILineageGlobalActions;
-import lineageos.app.LineageContextConstants;
+import orionos.app.ILineageGlobalActions;
+import orionos.app.LineageContextConstants;
 
-import org.lineageos.internal.util.PowerMenuConstants;
+import org.orionos.internal.util.PowerMenuConstants;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2017 The Android Open Source Project
- * SPDX-FileCopyrightText: 2017-2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.lib.phone;
+package org.orionos.lib.phone;
 
 import android.content.Context;
 import android.telephony.PhoneNumberUtils;
@@ -19,9 +19,9 @@ import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
 import com.google.i18n.phonenumbers.Phonenumber;
 
-import org.lineageos.lib.phone.spn.Item;
-import org.lineageos.lib.phone.spn.SensitivePN;
-import org.lineageos.lib.phone.spn.XmlParser;
+import org.orionos.lib.phone.spn.Item;
+import org.orionos.lib.phone.spn.SensitivePN;
+import org.orionos.lib.phone.spn.XmlParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.File;

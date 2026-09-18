@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.preference;
+package orionos.preference;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.util.Log;
 
-import lineageos.platform.Manifest;
+import orionos.platform.Manifest;
 
 import java.util.Objects;
 

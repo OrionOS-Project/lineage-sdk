@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2017 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.notification;
+package org.orionos.internal.notification;
 
 public class LedValues {
     public static final int LIGHT_BRIGHTNESS_MAXIMUM = 255;

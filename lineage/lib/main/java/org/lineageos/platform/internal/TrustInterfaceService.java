@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.app.ActivityOptions;
 import android.app.Notification;
@@ -23,10 +23,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
 
-import lineageos.app.LineageContextConstants;
-import lineageos.providers.LineageSettings;
-import lineageos.trust.ITrustInterface;
-import lineageos.trust.TrustInterface;
+import orionos.app.LineageContextConstants;
+import orionos.providers.LineageSettings;
+import orionos.trust.ITrustInterface;
+import orionos.trust.TrustInterface;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -42,8 +42,8 @@ public class TrustInterfaceService extends LineageSystemService {
     private static final String LINEAGE_VENDOR_SECURITY_PATCHES =
             "ro.lineage.build.vendor_security_patch";
 
-    private static final String INTENT_PARTS = "org.lineageos.lineageparts.TRUST_INTERFACE";
-    private static final String INTENT_ONBOARDING = "org.lineageos.lineageparts.TRUST_HINT";
+    private static final String INTENT_PARTS = "org.orionos.lineageparts.TRUST_INTERFACE";
+    private static final String INTENT_ONBOARDING = "org.orionos.lineageparts.TRUST_HINT";
 
     private static final String TRUST_CHANNEL_ID = "TrustInterface";
     private static final String TRUST_CHANNEL_ID_TV = "TrustInterface.tv";

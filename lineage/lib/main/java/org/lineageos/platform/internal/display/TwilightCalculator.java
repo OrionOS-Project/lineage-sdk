@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2010 The Android Open Source Project
- * SPDX-FileCopyrightText: 2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
 import android.text.format.DateUtils;
 

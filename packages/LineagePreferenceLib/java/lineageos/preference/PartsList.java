@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.preference;
+package orionos.preference;
 
 import static com.android.internal.R.styleable.Preference;
 import static com.android.internal.R.styleable.Preference_fragment;
@@ -11,8 +11,8 @@ import static com.android.internal.R.styleable.Preference_key;
 import static com.android.internal.R.styleable.Preference_summary;
 import static com.android.internal.R.styleable.Preference_title;
 
-import static lineageos.preference.R.styleable.lineage_Searchable;
-import static lineageos.preference.R.styleable.lineage_Searchable_xmlRes;
+import static orionos.preference.R.styleable.lineage_Searchable;
+import static orionos.preference.R.styleable.lineage_Searchable_xmlRes;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -43,7 +43,7 @@ public class PartsList {
 
     public static final String EXTRA_PART = ":lineage:part";
 
-    public static final String LINEAGEPARTS_PACKAGE = "org.lineageos.lineageparts";
+    public static final String LINEAGEPARTS_PACKAGE = "org.orionos.lineageparts";
 
     public static final ComponentName LINEAGEPARTS_ACTIVITY = new ComponentName(
             LINEAGEPARTS_PACKAGE, LINEAGEPARTS_PACKAGE + ".PartsActivity");

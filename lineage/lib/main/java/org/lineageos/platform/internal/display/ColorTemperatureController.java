@@ -1,14 +1,14 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
-import static lineageos.hardware.LiveDisplayManager.MODE_AUTO;
-import static lineageos.hardware.LiveDisplayManager.MODE_DAY;
-import static lineageos.hardware.LiveDisplayManager.MODE_NIGHT;
-import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
+import static orionos.hardware.LiveDisplayManager.MODE_AUTO;
+import static orionos.hardware.LiveDisplayManager.MODE_DAY;
+import static orionos.hardware.LiveDisplayManager.MODE_NIGHT;
+import static orionos.hardware.LiveDisplayManager.MODE_OFF;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -20,12 +20,12 @@ import android.util.Range;
 import android.util.Slog;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.hardware.LiveDisplayManager;
-import lineageos.providers.LineageSettings;
-import lineageos.util.ColorUtils;
+import orionos.hardware.LineageHardwareManager;
+import orionos.hardware.LiveDisplayManager;
+import orionos.providers.LineageSettings;
+import orionos.util.ColorUtils;
 
-import org.lineageos.platform.internal.display.TwilightTracker.TwilightState;
+import org.orionos.platform.internal.display.TwilightTracker.TwilightState;
 
 import java.io.PrintWriter;
 import java.util.BitSet;
@@ -73,17 +73,17 @@ public class ColorTemperatureController extends LiveDisplayFeature {
                 (mUseColorBalance || mDisplayHardware.hasColorAdjustment());
 
         mDefaultDayTemperature = mContext.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_dayColorTemperature);
+                org.orionos.platform.internal.R.integer.config_dayColorTemperature);
         mDefaultNightTemperature = mContext.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_nightColorTemperature);
+                org.orionos.platform.internal.R.integer.config_nightColorTemperature);
 
         mColorTemperatureRange = Range.create(
                 mContext.getResources().getInteger(
-                        org.lineageos.platform.internal.R.integer.config_minColorTemperature),
+                        org.orionos.platform.internal.R.integer.config_minColorTemperature),
                 mContext.getResources().getInteger(
-                        org.lineageos.platform.internal.R.integer.config_maxColorTemperature));
+                        org.orionos.platform.internal.R.integer.config_maxColorTemperature));
 
-        mColorBalanceCurve = org.lineageos.internal.util.MathUtils.powerCurve(
+        mColorBalanceCurve = org.orionos.internal.util.MathUtils.powerCurve(
                 mColorTemperatureRange.getLower(),
                 mDefaultDayTemperature,
                 mColorTemperatureRange.getUpper());
@@ -238,7 +238,7 @@ public class ColorTemperatureController extends LiveDisplayFeature {
      * correct configuration at the device level!
      */
     private int mapColorTemperatureToBalance(int temperature) {
-        double z = org.lineageos.internal.util.MathUtils.powerCurveToLinear(mColorBalanceCurve,
+        double z = org.orionos.internal.util.MathUtils.powerCurveToLinear(mColorBalanceCurve,
                 temperature);
         return Math.round(MathUtils.lerp((float)mColorBalanceRange.getLower(),
                 (float)mColorBalanceRange.getUpper(), (float)z));

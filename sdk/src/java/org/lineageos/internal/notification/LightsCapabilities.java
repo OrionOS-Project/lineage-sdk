@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2017 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.notification;
+package org.orionos.internal.notification;
 
 import android.content.Context;
 
@@ -49,13 +49,13 @@ public final class LightsCapabilities {
 
     public static boolean blinks(Context context) {
         final int capabilities = context.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities);
+                org.orionos.platform.internal.R.integer.config_deviceLightCapabilities);
         return (capabilities & (LIGHTS_PULSATING_LED | LIGHTS_BREATHING_LED)) != 0;
     }
 
     public static boolean supports(Context context, final int capability) {
         final int capabilities = context.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities);
+                org.orionos.platform.internal.R.integer.config_deviceLightCapabilities);
         return (capabilities & capability) != 0;
     }
 }

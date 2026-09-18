@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2012 The Android Open Source Project
- * SPDX-FileCopyrightText: 2017-20224 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-20224 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -39,7 +39,7 @@ public final class TwilightTracker {
     private static final String TAG = "TwilightTracker";
     private static final boolean DEBUG = false;
     private static final String ACTION_UPDATE_TWILIGHT_STATE =
-            "lineageos.platform.intent.action.UPDATE_TWILIGHT_STATE";
+            "orionos.platform.intent.action.UPDATE_TWILIGHT_STATE";
 
     private final Object mLock = new Object();
 

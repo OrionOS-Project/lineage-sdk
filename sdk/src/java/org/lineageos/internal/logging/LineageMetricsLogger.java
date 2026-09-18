@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2018-2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.logging;
+package org.orionos.internal.logging;
 
 import com.android.internal.logging.MetricsLogger;
 

@@ -1,5 +1,5 @@
 //
-// SPDX-FileCopyrightText: 2018-2025 The LineageOS Project
+// SPDX-FileCopyrightText: 2018-2025 The OrionOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
@@ -10,11 +10,11 @@ android_app {
 
     certificate: "platform",
     privileged: true,
-    privapp_allowlist: "org.lineageos.lineagesettings.xml",
+    privapp_allowlist: "org.orionos.lineagesettings.xml",
     platform_apis: true,
     system_ext_specific: true,
 
     static_libs: [
-        "org.lineageos.platform.internal",
+        "org.orionos.platform.internal",
     ],
 }

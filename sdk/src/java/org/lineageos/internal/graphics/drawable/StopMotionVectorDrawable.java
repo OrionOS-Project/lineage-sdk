@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.graphics.drawable;
+package org.orionos.internal.graphics.drawable;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

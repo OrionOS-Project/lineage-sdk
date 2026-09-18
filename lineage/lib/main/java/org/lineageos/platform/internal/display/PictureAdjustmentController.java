@@ -1,9 +1,9 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
 import android.content.Context;
 import android.net.Uri;
@@ -13,11 +13,11 @@ import android.util.Range;
 import android.util.Slog;
 import android.util.SparseArray;
 
-import lineageos.hardware.DisplayMode;
-import lineageos.hardware.HSIC;
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.hardware.LiveDisplayManager;
-import lineageos.providers.LineageSettings;
+import orionos.hardware.DisplayMode;
+import orionos.hardware.HSIC;
+import orionos.hardware.LineageHardwareManager;
+import orionos.hardware.LiveDisplayManager;
+import orionos.providers.LineageSettings;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;

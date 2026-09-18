@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 /* Master list of all actions for the power menu */
 public class PowerMenuConstants {

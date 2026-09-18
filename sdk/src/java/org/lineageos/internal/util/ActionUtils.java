@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2023 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
@@ -22,7 +22,7 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.widget.Toast;
 
-import org.lineageos.platform.internal.R;
+import org.orionos.platform.internal.R;
 
 import java.util.List;
 
@@ -101,8 +101,8 @@ public class ActionUtils {
         final String packageName = lastTask.baseIntent.getComponent().getPackageName();
         final IActivityManager am = ActivityManagerNative.getDefault();
         final ActivityOptions opts = ActivityOptions.makeCustomAnimation(context,
-                org.lineageos.platform.internal.R.anim.last_app_in,
-                org.lineageos.platform.internal.R.anim.last_app_out);
+                org.orionos.platform.internal.R.anim.last_app_in,
+                org.orionos.platform.internal.R.anim.last_app_out);
 
         if (DEBUG) Log.d(TAG, "switching to " + packageName);
         am.moveTaskToFront(null, null, lastTask.id,

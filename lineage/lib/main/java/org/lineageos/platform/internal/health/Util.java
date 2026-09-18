@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2024-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
 import android.content.Context;
 import android.text.format.DateFormat;

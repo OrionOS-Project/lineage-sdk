@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.util.palette;
+package orionos.util.palette;
 
 import android.annotation.ColorInt;
 import android.annotation.Nullable;

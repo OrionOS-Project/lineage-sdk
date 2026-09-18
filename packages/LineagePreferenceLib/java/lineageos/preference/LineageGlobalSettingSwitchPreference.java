@@ -1,15 +1,15 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2018 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.preference;
+package orionos.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public class LineageGlobalSettingSwitchPreference extends SelfRemovingSwitchPreference {
 

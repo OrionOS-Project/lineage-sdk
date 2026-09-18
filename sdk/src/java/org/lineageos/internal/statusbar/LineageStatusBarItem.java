@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018 The LineageOS project
+ * SPDX-FileCopyrightText: 2018 The OrionOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.statusbar;
+package org.orionos.internal.statusbar;
 
 import android.graphics.Rect;
 import android.view.View;

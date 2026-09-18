@@ -1,8 +1,8 @@
 /**
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The OrionOS Project
  */
 
-package lineageos.app;
+package orionos.app;
 
 parcelable NotificationGroup;

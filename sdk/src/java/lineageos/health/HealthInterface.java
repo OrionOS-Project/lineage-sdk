@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.health;
+package orionos.health;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -11,7 +11,7 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.Log;
 
-import lineageos.app.LineageContextConstants;
+import orionos.app.LineageContextConstants;
 
 public class HealthInterface {
     /**
@@ -53,7 +53,7 @@ public class HealthInterface {
     }
 
     /**
-     * Get or create an instance of the {@link lineageos.health.HealthInterface}
+     * Get or create an instance of the {@link orionos.health.HealthInterface}
      *
      * @param context Used to get the service
      * @return {@link HealthInterface}

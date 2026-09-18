@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2025 The OrionOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.statusbar;
+package org.orionos.internal.statusbar;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -30,9 +30,9 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
-import org.lineageos.platform.internal.R;
+import org.orionos.platform.internal.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

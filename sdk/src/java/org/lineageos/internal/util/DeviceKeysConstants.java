@@ -1,19 +1,19 @@
 /*
- * SPDX-FileCopyrightText: 2018,2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018,2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 import android.content.ContentResolver;
 import android.os.UserHandle;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public class DeviceKeysConstants {
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
-    //   sdk/src/java/lineageos/providers/LineageSettings.java
+    //   sdk/src/java/orionos/providers/LineageSettings.java
     public enum Action {
         NOTHING,
         MENU,

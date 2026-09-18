@@ -1,17 +1,17 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.hardware;
+package orionos.hardware;
 
-import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_BALANCE;
-import static lineageos.hardware.LiveDisplayManager.FEATURE_FIRST;
-import static lineageos.hardware.LiveDisplayManager.FEATURE_LAST;
-import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
-import static lineageos.hardware.LiveDisplayManager.MODE_FIRST;
-import static lineageos.hardware.LiveDisplayManager.MODE_LAST;
-import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
+import static orionos.hardware.LiveDisplayManager.FEATURE_COLOR_BALANCE;
+import static orionos.hardware.LiveDisplayManager.FEATURE_FIRST;
+import static orionos.hardware.LiveDisplayManager.FEATURE_LAST;
+import static orionos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
+import static orionos.hardware.LiveDisplayManager.MODE_FIRST;
+import static orionos.hardware.LiveDisplayManager.MODE_LAST;
+import static orionos.hardware.LiveDisplayManager.MODE_OFF;
 
 import android.os.Parcel;
 import android.os.Parcelable;

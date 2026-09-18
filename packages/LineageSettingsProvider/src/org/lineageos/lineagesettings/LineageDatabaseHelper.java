@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015-2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2026 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.lineagesettings;
+package org.orionos.lineagesettings;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -23,7 +23,7 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 import java.io.File;
 import java.util.Objects;
@@ -262,7 +262,7 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
 
         if (upgradeVersion < 18) {
             Integer defaultValue = mContext.getResources().getBoolean(
-                    org.lineageos.platform.internal.R.bool.config_fingerprintWakeAndUnlock)
+                    org.orionos.platform.internal.R.bool.config_fingerprintWakeAndUnlock)
                     ? 1 : 0; // Reversed since they're reversed again below
 
             // Used to be LineageSettings.System.FINGERPRINT_WAKE_UNLOCK
@@ -286,7 +286,7 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
         if (upgradeVersion < 19) {
             // Set default value based on config_fingerprintWakeAndUnlock
             boolean fingerprintWakeAndUnlock = mContext.getResources().getBoolean(
-                    org.lineageos.platform.internal.R.bool.config_fingerprintWakeAndUnlock);
+                    org.orionos.platform.internal.R.bool.config_fingerprintWakeAndUnlock);
             // Previously Settings.Secure.SFPS_REQUIRE_SCREEN_ON_TO_AUTH_ENABLED
             Integer oldSetting = Settings.Secure.getInt(mContext.getContentResolver(),
                     "sfps_require_screen_on_to_auth_enabled", fingerprintWakeAndUnlock ? 0 : 1);

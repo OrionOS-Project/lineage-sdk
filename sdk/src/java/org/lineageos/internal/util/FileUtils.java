@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 import android.util.Log;
 

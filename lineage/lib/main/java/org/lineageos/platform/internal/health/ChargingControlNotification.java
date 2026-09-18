@@ -1,11 +1,11 @@
 /*
- * SPDX-FileCopyrightText: 2024-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
-import static org.lineageos.platform.internal.health.Util.msToString;
+import static org.orionos.platform.internal.health.Util.msToString;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -16,18 +16,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
-import org.lineageos.platform.internal.R;
+import org.orionos.platform.internal.R;
 
 public class ChargingControlNotification {
     private final NotificationManager mNotificationManager;
     private final Context mContext;
 
     private static final String INTENT_PARTS =
-            "org.lineageos.lineageparts.CHARGING_CONTROL_SETTINGS";
+            "org.orionos.lineageparts.CHARGING_CONTROL_SETTINGS";
 
     private static final int CHARGING_CONTROL_NOTIFICATION_ID = 1000;
     private static final String ACTION_CHARGING_CONTROL_CANCEL_ONCE =
-            "lineageos.platform.intent.action.CHARGING_CONTROL_CANCEL_ONCE";
+            "orionos.platform.intent.action.CHARGING_CONTROL_CANCEL_ONCE";
     private static final String CHARGING_CONTROL_CHANNEL_ID = "LineageHealthChargingControl";
 
     private final ChargingControlController mChargingControlController;

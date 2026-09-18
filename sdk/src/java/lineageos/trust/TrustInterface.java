@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018-2019 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2019 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.trust;
+package orionos.trust;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -11,7 +11,7 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.Log;
 
-import lineageos.app.LineageContextConstants;
+import orionos.app.LineageContextConstants;
 
 public class TrustInterface {
     /**
@@ -19,7 +19,7 @@ public class TrustInterface {
      * security messages to the user.
      * This is a system-only permission, user-installed apps cannot use it
      */
-    public static final String TRUST_INTERFACE_PERMISSION = "lineageos.permission.TRUST_INTERFACE";
+    public static final String TRUST_INTERFACE_PERMISSION = "orionos.permission.TRUST_INTERFACE";
 
     /**
      * Unable to determine status, an error occured
@@ -169,7 +169,7 @@ public class TrustInterface {
     }
 
     /**
-     * Get or create an instance of the {@link lineageos.trust.TrustInterface}
+     * Get or create an instance of the {@link orionos.trust.TrustInterface}
      *
      * @param context Used to get the service
      * @return {@link TrustInterface}

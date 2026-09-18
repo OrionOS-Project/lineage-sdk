@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.profiles;
+package orionos.profiles;
 
 import android.content.Context;
 import android.os.Parcel;

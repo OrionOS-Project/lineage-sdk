@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2013-2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -19,10 +19,10 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.util.Log;
 
-import lineageos.app.Profile;
-import lineageos.app.Profile.ProfileTrigger;
-import lineageos.app.ProfileManager;
-import lineageos.providers.LineageSettings;
+import orionos.app.Profile;
+import orionos.app.Profile.ProfileTrigger;
+import orionos.app.ProfileManager;
+import orionos.providers.LineageSettings;
 
 import java.util.UUID;
 

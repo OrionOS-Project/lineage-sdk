@@ -2,13 +2,13 @@
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 import android.content.Context;
 
 import com.android.internal.widget.LockPatternUtils;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public class LineageLockPatternUtils extends LockPatternUtils {
     public LineageLockPatternUtils(Context context) {

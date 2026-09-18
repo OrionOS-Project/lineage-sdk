@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.hardware;
+package orionos.hardware;
 
 import android.graphics.Color;
 import android.os.Parcel;

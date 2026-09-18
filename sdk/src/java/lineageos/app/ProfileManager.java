@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2025 LineageOS Project
+ * SPDX-FileCopyrightText: 2025 OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.app;
+package orionos.app;
 
 import android.annotation.SdkConstant;
 import android.annotation.SdkConstant.SdkConstantType;
@@ -40,7 +40,7 @@ import java.util.UUID;
  * <p>
  * This manager requires the MODIFY_PROFILES permission.
  *
- * @see lineageos.app.Profile
+ * @see orionos.app.Profile
  */
 public class ProfileManager {
 
@@ -55,7 +55,7 @@ public class ProfileManager {
      * or by calls to the ProfileManagerService / Profile.</p>
      */
     public static final String INTENT_ACTION_PROFILE_SELECTED =
-            "lineageos.platform.intent.action.PROFILE_SELECTED";
+            "orionos.platform.intent.action.PROFILE_SELECTED";
 
     /**
      * <p>Broadcast Action: Current profile has been updated. This is triggered every time the
@@ -64,14 +64,14 @@ public class ProfileManager {
      * trigger a profile selection, but causes its name to change.</p>
      */
     public static final String INTENT_ACTION_PROFILE_UPDATED =
-            "lineageos.platform.intent.action.PROFILE_UPDATED";
+            "orionos.platform.intent.action.PROFILE_UPDATED";
 
 
     /**
      * @hide
      */
     public static final String INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED =
-            "lineageos.platform.intent.action.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED";
+            "orionos.platform.intent.action.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED";
 
     /**
      * @hide
@@ -123,7 +123,7 @@ public class ProfileManager {
      */
     @SdkConstant(SdkConstantType.ACTIVITY_INTENT_ACTION)
     public static final String ACTION_PROFILE_PICKER =
-            "lineageos.platform.intent.action.PROFILE_PICKER";
+            "orionos.platform.intent.action.PROFILE_PICKER";
 
     /**
      * Constant for NO_PROFILE
@@ -139,7 +139,7 @@ public class ProfileManager {
      * @see #ACTION_PROFILE_PICKER
      */
     public static final String EXTRA_PROFILE_SHOW_NONE =
-            "lineageos.platform.intent.extra.profile.SHOW_NONE";
+            "orionos.platform.intent.extra.profile.SHOW_NONE";
 
     /**
      * Given to the profile picker as a {@link UUID} string representation. The {@link UUID}
@@ -151,7 +151,7 @@ public class ProfileManager {
      * @see #ACTION_PROFILE_PICKER
      */
     public static final String EXTRA_PROFILE_EXISTING_UUID =
-            "lineageos.platform.extra.profile.EXISTING_UUID";
+            "orionos.platform.extra.profile.EXISTING_UUID";
 
     /**
      * Given to the profile picker as a {@link CharSequence}. The title to
@@ -161,7 +161,7 @@ public class ProfileManager {
      * @see #ACTION_PROFILE_PICKER
      */
     public static final String EXTRA_PROFILE_TITLE =
-            "lineageos.platform.intent.extra.profile.TITLE";
+            "orionos.platform.intent.extra.profile.TITLE";
 
     /**
      * Returned from the profile picker as a {@link UUID} string representation.
@@ -173,7 +173,7 @@ public class ProfileManager {
      * @see #ACTION_PROFILE_PICKER
      */
     public static final String EXTRA_PROFILE_PICKED_UUID =
-            "lineageos.platform.intent.extra.profile.PICKED_UUID";
+            "orionos.platform.intent.extra.profile.PICKED_UUID";
 
     /**
      * Broadcast intent action indicating that Profiles has been enabled or disabled.
@@ -183,7 +183,7 @@ public class ProfileManager {
      */
     @SdkConstant(SdkConstantType.BROADCAST_INTENT_ACTION)
     public static final String PROFILES_STATE_CHANGED_ACTION =
-        "lineageos.platform.app.profiles.PROFILES_STATE_CHANGED";
+        "orionos.platform.app.profiles.PROFILES_STATE_CHANGED";
 
     /**
      * The lookup key for an int that indicates whether Profiles are enabled or
@@ -201,7 +201,7 @@ public class ProfileManager {
      * @see #ACTION_PROFILE_PICKER
      */
     public static final String EXTRA_PROFILE_DIALOG_THEME =
-            "lineageos.platform.intent.extra.profile.DIALOG_THEME";
+            "orionos.platform.intent.extra.profile.DIALOG_THEME";
 
     /**
      * Profiles are disabled.
@@ -233,7 +233,7 @@ public class ProfileManager {
         }
 
         if (context.getPackageManager().hasSystemFeature(
-                lineageos.app.LineageContextConstants.Features.PROFILES) && sService == null) {
+                orionos.app.LineageContextConstants.Features.PROFILES) && sService == null) {
             Log.wtf(TAG, "Unable to get ProfileManagerService. The service either" +
                     " crashed, was not started, or the interface has been called to early in" +
                     " SystemServer init");
@@ -241,7 +241,7 @@ public class ProfileManager {
     }
 
     /**
-     * Get or create an instance of the {@link lineageos.app.ProfileManager}
+     * Get or create an instance of the {@link orionos.app.ProfileManager}
      * @param context
      * @return {@link ProfileManager}
      */

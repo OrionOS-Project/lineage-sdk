@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2011-2015 CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2025 LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.app.ActivityManagerNative;
 import android.app.backup.BackupManager;
@@ -34,13 +34,13 @@ import android.util.Log;
 
 import com.android.internal.policy.IKeyguardService;
 
-import lineageos.app.IProfileManager;
-import lineageos.app.LineageContextConstants;
-import lineageos.app.NotificationGroup;
-import lineageos.app.Profile;
-import lineageos.app.ProfileGroup;
-import lineageos.app.ProfileManager;
-import lineageos.providers.LineageSettings;
+import orionos.app.IProfileManager;
+import orionos.app.LineageContextConstants;
+import orionos.app.NotificationGroup;
+import orionos.app.Profile;
+import orionos.app.ProfileGroup;
+import orionos.app.ProfileManager;
+import orionos.providers.LineageSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -240,8 +240,8 @@ public class ProfileManagerService extends LineageSystemService {
         mBackupManager = new BackupManager(mContext);
 
         mWildcardGroup = new NotificationGroup(
-                mContext.getString(org.lineageos.platform.internal.R.string.wildcardProfile),
-                org.lineageos.platform.internal.R.string.wildcardProfile,
+                mContext.getString(org.orionos.platform.internal.R.string.wildcardProfile),
+                org.orionos.platform.internal.R.string.wildcardProfile,
                 mWildcardUUID);
 
         IntentFilter filter = new IntentFilter();
@@ -655,7 +655,7 @@ public class ProfileManagerService extends LineageSystemService {
 
     private void enforceChangePermissions() {
         mContext.enforceCallingOrSelfPermission(
-                lineageos.platform.Manifest.permission.MODIFY_PROFILES,
+                orionos.platform.Manifest.permission.MODIFY_PROFILES,
                 "You do not have permissions to change the Profile Manager.");
     }
 
@@ -724,7 +724,7 @@ public class ProfileManagerService extends LineageSystemService {
 
     private void initialiseStructure() throws XmlPullParserException, IOException {
         XmlResourceParser xml = mContext.getResources().getXml(
-                org.lineageos.platform.internal.R.xml.profile_default);
+                org.orionos.platform.internal.R.xml.profile_default);
         try {
             loadXml(xml, mContext);
             mDirty = true;

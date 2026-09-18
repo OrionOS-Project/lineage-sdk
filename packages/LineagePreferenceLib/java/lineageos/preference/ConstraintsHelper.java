@@ -1,12 +1,12 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017,2019-2020 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017,2019-2020 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.preference;
+package orionos.preference;
 
-import static lineageos.preference.R.styleable.lineage_SelfRemovingPreference_minSummaryLines;
-import static lineageos.preference.R.styleable.lineage_SelfRemovingPreference_replacesKey;
+import static orionos.preference.R.styleable.lineage_SelfRemovingPreference_minSummaryLines;
+import static orionos.preference.R.styleable.lineage_SelfRemovingPreference_replacesKey;
 
 import android.content.Context;
 import android.content.Intent;
@@ -31,7 +31,7 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
 
-import lineageos.hardware.LineageHardwareManager;
+import orionos.hardware.LineageHardwareManager;
 
 import java.util.Arrays;
 import java.util.List;

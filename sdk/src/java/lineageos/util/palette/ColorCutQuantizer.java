@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.util.palette;
+package orionos.util.palette;
 
 import android.graphics.Color;
 import android.util.TimingLogger;
 
-import lineageos.util.palette.Palette.Swatch;
+import orionos.util.palette.Palette.Swatch;
 
 import java.util.ArrayList;
 import java.util.Arrays;

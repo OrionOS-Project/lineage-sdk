@@ -1,13 +1,13 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
-import static lineageos.hardware.LiveDisplayManager.MODE_FIRST;
-import static lineageos.hardware.LiveDisplayManager.MODE_LAST;
-import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
+import static orionos.hardware.LiveDisplayManager.MODE_FIRST;
+import static orionos.hardware.LiveDisplayManager.MODE_LAST;
+import static orionos.hardware.LiveDisplayManager.MODE_OFF;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -29,16 +29,16 @@ import android.view.Display;
 import com.android.server.LocalServices;
 import com.android.server.ServiceThread;
 
-import lineageos.app.LineageContextConstants;
-import lineageos.hardware.HSIC;
-import lineageos.hardware.ILiveDisplayService;
-import lineageos.hardware.LiveDisplayConfig;
-import lineageos.providers.LineageSettings;
+import orionos.app.LineageContextConstants;
+import orionos.hardware.HSIC;
+import orionos.hardware.ILiveDisplayService;
+import orionos.hardware.LiveDisplayConfig;
+import orionos.providers.LineageSettings;
 
-import org.lineageos.platform.internal.LineageSystemService;
-import org.lineageos.platform.internal.common.UserContentObserver;
-import org.lineageos.platform.internal.display.TwilightTracker.TwilightListener;
-import org.lineageos.platform.internal.display.TwilightTracker.TwilightState;
+import org.orionos.platform.internal.LineageSystemService;
+import org.orionos.platform.internal.common.UserContentObserver;
+import org.orionos.platform.internal.display.TwilightTracker.TwilightListener;
+import org.orionos.platform.internal.display.TwilightTracker.TwilightState;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -164,7 +164,7 @@ public class LiveDisplayService extends LineageSystemService {
 
             // static config
             int defaultMode = mContext.getResources().getInteger(
-                    org.lineageos.platform.internal.R.integer.config_defaultLiveDisplayMode);
+                    org.orionos.platform.internal.R.integer.config_defaultLiveDisplayMode);
 
             mConfig = new LiveDisplayConfig(capabilities, defaultMode,
                     mCTC.getDefaultDayTemperature(), mCTC.getDefaultNightTemperature(),
@@ -203,7 +203,7 @@ public class LiveDisplayService extends LineageSystemService {
 
             updateFeatures(ALL_CHANGED);
 
-            Intent intent = new Intent(lineageos.content.Intent.ACTION_INITIALIZE_LIVEDISPLAY);
+            Intent intent = new Intent(orionos.content.Intent.ACTION_INITIALIZE_LIVEDISPLAY);
             intent.setPackage("com.android.systemui");
             mContext.sendBroadcastAsUser(intent, UserHandle.SYSTEM);
         }
@@ -236,7 +236,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setMode(int mode) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             if (!mConfig.hasModeSupport()) {
                 return false;
             }
@@ -251,7 +251,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setColorAdjustment(float[] adj) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mDHC.setColorAdjustment(adj);
         }
 
@@ -263,7 +263,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public  boolean setAutoContrastEnabled(boolean enabled) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mDHC.setAutoContrastEnabled(enabled);
         }
 
@@ -275,7 +275,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setCABCEnabled(boolean enabled) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mDHC.setCABCEnabled(enabled);
         }
 
@@ -287,7 +287,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setColorEnhancementEnabled(boolean enabled) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mDHC.setColorEnhancementEnabled(enabled);
         }
 
@@ -299,7 +299,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setAutomaticOutdoorModeEnabled(boolean enabled) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mOMC.setAutomaticOutdoorModeEnabled(enabled);
         }
 
@@ -311,7 +311,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setDayColorTemperature(int temperature) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             mCTC.setDayColorTemperature(temperature);
             return true;
         }
@@ -324,7 +324,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setNightColorTemperature(int temperature) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             mCTC.setNightColorTemperature(temperature);
             return true;
         }
@@ -372,7 +372,7 @@ public class LiveDisplayService extends LineageSystemService {
         @Override
         public boolean setAntiFlickerEnabled(boolean enabled) {
             mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+                    orionos.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
             return mDHC.setAntiFlickerEnabled(enabled);
         }
     };
@@ -535,13 +535,13 @@ public class LiveDisplayService extends LineageSystemService {
                     PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
             Notification.Builder builder = new Notification.Builder(mContext)
                     .setContentTitle(mContext.getResources().getString(
-                            org.lineageos.platform.internal.R.string.live_display_title))
+                            org.orionos.platform.internal.R.string.live_display_title))
                     .setContentText(mContext.getResources().getString(
-                            org.lineageos.platform.internal.R.string.live_display_hint))
-                    .setSmallIcon(org.lineageos.platform.internal.R.drawable.ic_livedisplay_notif)
+                            org.orionos.platform.internal.R.string.live_display_hint))
+                    .setSmallIcon(org.orionos.platform.internal.R.drawable.ic_livedisplay_notif)
                     .setStyle(new Notification.BigTextStyle().bigText(mContext.getResources()
                              .getString(
-                                     org.lineageos.platform.internal.R.string.live_display_hint)))
+                                     org.orionos.platform.internal.R.string.live_display_hint)))
                     .setContentIntent(result)
                     .setAutoCancel(true);
 

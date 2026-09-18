@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.buttons;
+package org.orionos.internal.buttons;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.util.Slog;
 import android.view.KeyEvent;
 import android.view.ViewConfiguration;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 import java.util.List;
 

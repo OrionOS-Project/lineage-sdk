@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
 import android.content.res.Resources;
 import android.content.ContentResolver;
@@ -16,10 +16,10 @@ import android.util.Log;
 
 import com.android.internal.util.ArrayUtils;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
-import org.lineageos.platform.internal.health.LineageHealthFeature;
-import org.lineageos.platform.internal.R;
+import org.orionos.platform.internal.health.LineageHealthFeature;
+import org.orionos.platform.internal.R;
 
 import vendor.lineage.health.FastChargeMode;
 import vendor.lineage.health.IFastCharge;

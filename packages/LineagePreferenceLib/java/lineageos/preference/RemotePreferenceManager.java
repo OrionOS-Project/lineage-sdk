@@ -2,11 +2,11 @@
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.preference;
+package orionos.preference;
 
-import static lineageos.preference.RemotePreference.ACTION_REFRESH_PREFERENCE;
-import static lineageos.preference.RemotePreference.ACTION_UPDATE_PREFERENCE;
-import static lineageos.preference.RemotePreference.EXTRA_KEY;
+import static orionos.preference.RemotePreference.ACTION_REFRESH_PREFERENCE;
+import static orionos.preference.RemotePreference.ACTION_UPDATE_PREFERENCE;
+import static orionos.preference.RemotePreference.EXTRA_KEY;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -21,7 +21,7 @@ import android.os.UserHandle;
 import android.util.ArrayMap;
 import android.util.Log;
 
-import lineageos.platform.Manifest;
+import orionos.platform.Manifest;
 
 import java.util.HashSet;
 import java.util.Map;

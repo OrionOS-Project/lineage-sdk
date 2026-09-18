@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.notification;
+package org.orionos.internal.notification;
 
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
@@ -20,7 +20,7 @@ import android.os.UserHandle;
 import android.provider.Settings.Global;
 import android.util.Slog;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public final class LineageBatteryLights {
     private final String TAG = "LineageBatteryLights";

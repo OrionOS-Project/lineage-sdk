@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -11,9 +11,9 @@ import android.net.Uri;
 import android.os.Handler;
 import android.os.UserHandle;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
-import org.lineageos.platform.internal.common.UserContentObserver;
+import org.orionos.platform.internal.common.UserContentObserver;
 
 import java.io.PrintWriter;
 

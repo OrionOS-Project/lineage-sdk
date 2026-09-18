@@ -1,13 +1,13 @@
 /*
  * SPDX-FileCopyrightText: 2016, The CyanogenMod Project
- * SPDX-FileCopyrightText: 2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.hardware;
+package orionos.hardware;
 
-import lineageos.hardware.HSIC;
-import lineageos.hardware.LiveDisplayConfig;
+import orionos.hardware.HSIC;
+import orionos.hardware.LiveDisplayConfig;
 
 /** @hide */
 interface ILiveDisplayService {

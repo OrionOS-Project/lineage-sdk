@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
 import android.Manifest;
 import android.content.Context;
@@ -14,10 +14,10 @@ import android.util.Log;
 
 import com.android.server.ServiceThread;
 
-import lineageos.app.LineageContextConstants;
-import lineageos.health.IHealthInterface;
+import orionos.app.LineageContextConstants;
+import orionos.health.IHealthInterface;
 
-import org.lineageos.platform.internal.LineageSystemService;
+import org.orionos.platform.internal.LineageSystemService;
 
 import vendor.lineage.health.ChargingControlSupportedMode;
 

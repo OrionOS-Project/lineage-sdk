@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015-2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.providers;
+package orionos.providers;
 
 import android.content.ContentResolver;
 import android.content.IContentProvider;
@@ -24,7 +24,7 @@ import android.util.Log;
 import com.android.internal.annotations.GuardedBy;
 import com.android.internal.util.ArrayUtils;
 
-import lineageos.trust.TrustInterface;
+import orionos.trust.TrustInterface;
 
 import vendor.lineage.health.FastChargeMode;
 
@@ -59,7 +59,7 @@ public final class LineageSettings {
      * <p>
      * Output: Nothing.
      */
-    public static final String ACTION_DATA_USAGE = "lineageos.settings.ACTION_DATA_USAGE";
+    public static final String ACTION_DATA_USAGE = "orionos.settings.ACTION_DATA_USAGE";
 
     /**
      * Activity Action: Show LiveDisplay settings
@@ -69,7 +69,7 @@ public final class LineageSettings {
      * Output: Nothing.
      */
     public static final String ACTION_LIVEDISPLAY_SETTINGS =
-            "lineageos.settings.LIVEDISPLAY_SETTINGS";
+            "orionos.settings.LIVEDISPLAY_SETTINGS";
 
     /**
      * Activity Action: Show Trust interface settings
@@ -79,7 +79,7 @@ public final class LineageSettings {
      * Output: Nothing.
      */
     public static final String ACTION_TRUST_INTERFACE =
-            "lineageos.settings.TRUST_INTERFACE";
+            "orionos.settings.TRUST_INTERFACE";
 
     // region Call Methods
 
@@ -2951,7 +2951,7 @@ public final class LineageSettings {
          *
          * Stores flags for each feature
          *
-         * @see {@link lineageos.trust.TrustInterface.TRUST_WARN_MAX_VALUE}
+         * @see {@link orionos.trust.TrustInterface.TRUST_WARN_MAX_VALUE}
          */
         public static final String TRUST_WARNINGS = "trust_warnings";
 

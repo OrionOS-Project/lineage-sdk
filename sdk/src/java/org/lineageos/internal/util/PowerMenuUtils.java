@@ -1,15 +1,15 @@
 /*
- * SPDX-FileCopyrightText: 2017 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.util;
+package org.orionos.internal.util;
 
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.UserHandle;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public final class PowerMenuUtils {
     public static boolean isAdvancedRestartPossible(final Context context) {

@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018-2019 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2019 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.trust;
+package orionos.trust;
 
 /** {@hide} */
 interface ITrustInterface {

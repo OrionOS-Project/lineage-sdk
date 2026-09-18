@@ -1,9 +1,9 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2018-2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.hardware;
+package orionos.hardware;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -11,7 +11,7 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.Log;
 
-import lineageos.app.LineageContextConstants;
+import orionos.app.LineageContextConstants;
 
 /**
  * LiveDisplay is an advanced set of features for improving
@@ -154,7 +154,7 @@ public class LiveDisplayManager {
     }
 
     /**
-     * Get or create an instance of the {@link lineageos.hardware.LiveDisplayManager}
+     * Get or create an instance of the {@link orionos.hardware.LiveDisplayManager}
      * @param context
      * @return {@link LiveDisplayManager}
      */

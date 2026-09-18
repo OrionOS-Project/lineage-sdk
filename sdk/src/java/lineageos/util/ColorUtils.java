@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2011-2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.util;
+package orionos.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -11,7 +11,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.MathUtils;
 
-import lineageos.util.palette.Palette;
+import orionos.util.palette.Palette;
 
 import java.util.Collections;
 import java.util.Comparator;

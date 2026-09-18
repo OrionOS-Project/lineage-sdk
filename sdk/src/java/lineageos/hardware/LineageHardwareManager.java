@@ -1,9 +1,9 @@
 /*
  * SPDX-FileCopyrightText: 2015-2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.hardware;
+package orionos.hardware;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -15,7 +15,7 @@ import android.util.Range;
 
 import com.android.internal.annotations.VisibleForTesting;
 
-import lineageos.app.LineageContextConstants;
+import orionos.app.LineageContextConstants;
 
 import vendor.lineage.livedisplay.IAdaptiveBacklight;
 import vendor.lineage.livedisplay.IAntiFlicker;
@@ -41,7 +41,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Manages access to LineageOS hardware extensions
+ * Manages access to OrionOS hardware extensions
  *
  *  <p>
  *  This manager requires the HARDWARE_ABSTRACTION_ACCESS permission.
@@ -202,7 +202,7 @@ public final class LineageHardwareManager {
         }
 
         final String[] mappings = mContext.getResources().getStringArray(
-                org.lineageos.platform.internal.R.array.config_displayModeMappings);
+                org.orionos.platform.internal.R.array.config_displayModeMappings);
         if (mappings != null && mappings.length > 0) {
             for (String mapping : mappings) {
                 String[] split = mapping.split(":");
@@ -212,11 +212,11 @@ public final class LineageHardwareManager {
             }
         }
         mFilterDisplayModes = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_filterDisplayModes);
+                org.orionos.platform.internal.R.bool.config_filterDisplayModes);
     }
 
     /**
-     * Get or create an instance of the {@link lineageos.hardware.LineageHardwareManager}
+     * Get or create an instance of the {@link orionos.hardware.LineageHardwareManager}
      * @param context
      * @return {@link LineageHardwareManager}
      */

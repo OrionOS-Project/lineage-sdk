@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2019,2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2019,2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.lineagesettings;
+package org.orionos.lineagesettings;
 
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
@@ -32,7 +32,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 import java.util.ArrayList;
 
@@ -167,17 +167,17 @@ public class LineageSettingsProvider extends ContentProvider {
 
             // Put methods
             case LineageSettings.CALL_METHOD_PUT_SYSTEM:
-                enforceWritePermission(lineageos.platform.Manifest.permission.WRITE_SETTINGS);
+                enforceWritePermission(orionos.platform.Manifest.permission.WRITE_SETTINGS);
                 callHelperPut(callingUserId, LineageSettings.System.CONTENT_URI, request, args);
                 return null;
             case LineageSettings.CALL_METHOD_PUT_SECURE:
                 enforceWritePermission(
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
                 callHelperPut(callingUserId, LineageSettings.Secure.CONTENT_URI, request, args);
                 return null;
             case LineageSettings.CALL_METHOD_PUT_GLOBAL:
                 enforceWritePermission(
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
                 callHelperPut(callingUserId, LineageSettings.Global.CONTENT_URI, request, args);
                 return null;
 
@@ -191,17 +191,17 @@ public class LineageSettingsProvider extends ContentProvider {
 
             // Delete methods
             case LineageSettings.CALL_METHOD_DELETE_SYSTEM:
-                enforceWritePermission(lineageos.platform.Manifest.permission.WRITE_SETTINGS);
+                enforceWritePermission(orionos.platform.Manifest.permission.WRITE_SETTINGS);
                 return callHelperDelete(callingUserId, LineageSettings.System.CONTENT_URI,
                         request);
             case LineageSettings.CALL_METHOD_DELETE_SECURE:
                 enforceWritePermission(
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
                 return callHelperDelete(callingUserId, LineageSettings.Secure.CONTENT_URI,
                         request);
             case LineageSettings.CALL_METHOD_DELETE_GLOBAL:
                 enforceWritePermission(
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
                 return callHelperDelete(callingUserId, LineageSettings.Global.CONTENT_URI,
                         request);
         }
@@ -610,7 +610,7 @@ public class LineageSettingsProvider extends ContentProvider {
         final String callingPackage = getCallingPackage();
         final boolean granted = PackageManager.PERMISSION_GRANTED ==
                 getContext().checkCallingOrSelfPermission(
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS);
         final boolean protectedTable =
                 LineageDatabaseHelper.LineageTableNames.TABLE_SECURE.equals(tableName) ||
                 LineageDatabaseHelper.LineageTableNames.TABLE_GLOBAL.equals(tableName);
@@ -626,7 +626,7 @@ public class LineageSettingsProvider extends ContentProvider {
         }
         throw new SecurityException(
                 String.format("Permission denial: writing to lineage settings requires %1$s",
-                        lineageos.platform.Manifest.permission.WRITE_SECURE_SETTINGS));
+                        orionos.platform.Manifest.permission.WRITE_SECURE_SETTINGS));
     }
 
     /**

@@ -1,18 +1,18 @@
 /*
- * SPDX-FileCopyrightText: 2024-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health.ccprovider;
+package org.orionos.platform.internal.health.ccprovider;
 
-import static lineageos.health.HealthInterface.MODE_AUTO;
-import static lineageos.health.HealthInterface.MODE_LIMIT;
-import static lineageos.health.HealthInterface.MODE_MANUAL;
+import static orionos.health.HealthInterface.MODE_AUTO;
+import static orionos.health.HealthInterface.MODE_LIMIT;
+import static orionos.health.HealthInterface.MODE_MANUAL;
 
 import android.content.Context;
 import android.util.Log;
 
-import org.lineageos.platform.internal.R;
+import org.orionos.platform.internal.R;
 
 import vendor.lineage.health.ChargingControlSupportedMode;
 import vendor.lineage.health.ChargingLimitInfo;

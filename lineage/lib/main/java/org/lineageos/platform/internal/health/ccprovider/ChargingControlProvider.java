@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2024-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health.ccprovider;
+package org.orionos.platform.internal.health.ccprovider;
 
 import android.content.Context;
 import android.os.RemoteException;
@@ -78,7 +78,7 @@ public abstract class ChargingControlProvider {
     }
 
     /**
-     * Called when the mode is {@link lineageos.health.HealthInterface#MODE_LIMIT} and
+     * Called when the mode is {@link orionos.health.HealthInterface#MODE_LIMIT} and
      * the {@link android.content.Intent#ACTION_BATTERY_CHANGED} is received.
      *
      * @param currentPct Current battery percentage
@@ -90,16 +90,16 @@ public abstract class ChargingControlProvider {
     }
 
     /**
-     * Called when the mode is {@link lineageos.health.HealthInterface#MODE_AUTO} or
-     * {@link lineageos.health.HealthInterface#MODE_MANUAL} and the
+     * Called when the mode is {@link orionos.health.HealthInterface#MODE_AUTO} or
+     * {@link orionos.health.HealthInterface#MODE_MANUAL} and the
      * {@link android.content.Intent#ACTION_BATTERY_CHANGED} is received.
      *
      * @param batteryPct Current battery percentage
      * @param startTime  The time when the charging control should start
      * @param targetTime The expected time when the battery should be full
      * @param configMode The current charging control mode, either
-     *                   {@link lineageos.health.HealthInterface#MODE_AUTO} or
-     *                   {@link lineageos.health.HealthInterface#MODE_MANUAL}
+     *                   {@link orionos.health.HealthInterface#MODE_AUTO} or
+     *                   {@link orionos.health.HealthInterface#MODE_MANUAL}
      * @return Whether a notification should be posted
      */
     protected boolean onBatteryChanged(float batteryPct, long startTime, long targetTime,
@@ -142,9 +142,9 @@ public abstract class ChargingControlProvider {
     /**
      * Whether this provider supports the mode.
      * Available modes:
-     *     - ${@link lineageos.health.HealthInterface#MODE_AUTO}
-     *     - ${@link lineageos.health.HealthInterface#MODE_MANUAL}
-     *     - ${@link lineageos.health.HealthInterface#MODE_LIMIT}
+     *     - ${@link orionos.health.HealthInterface#MODE_AUTO}
+     *     - ${@link orionos.health.HealthInterface#MODE_MANUAL}
+     *     - ${@link orionos.health.HealthInterface#MODE_LIMIT}
      */
     public abstract boolean isChargingControlModeSupported(int mode);
 

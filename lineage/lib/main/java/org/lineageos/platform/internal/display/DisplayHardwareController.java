@@ -1,9 +1,9 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
 import android.animation.FloatArrayEvaluator;
 import android.animation.ValueAnimator;
@@ -18,9 +18,9 @@ import android.util.MathUtils;
 import android.util.Slog;
 import android.view.animation.LinearInterpolator;
 
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.hardware.LiveDisplayManager;
-import lineageos.providers.LineageSettings;
+import orionos.hardware.LineageHardwareManager;
+import orionos.hardware.LiveDisplayManager;
+import orionos.providers.LineageSettings;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -75,17 +75,17 @@ public class DisplayHardwareController extends LiveDisplayFeature {
         mUseCABC = mHardware
                 .isSupported(LineageHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT);
         mDefaultCABC = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_defaultCABC);
+                org.orionos.platform.internal.R.bool.config_defaultCABC);
 
         mUseColorEnhancement = mHardware
                 .isSupported(LineageHardwareManager.FEATURE_COLOR_ENHANCEMENT);
         mDefaultColorEnhancement = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_defaultColorEnhancement);
+                org.orionos.platform.internal.R.bool.config_defaultColorEnhancement);
 
         mUseAutoContrast = mHardware
                 .isSupported(LineageHardwareManager.FEATURE_AUTO_CONTRAST);
         mDefaultAutoContrast = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_defaultAutoContrast);
+                org.orionos.platform.internal.R.bool.config_defaultAutoContrast);
 
         mUseColorAdjustment = mHardware
                 .isSupported(LineageHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION);
@@ -99,7 +99,7 @@ public class DisplayHardwareController extends LiveDisplayFeature {
         mUseAntiFlicker = mHardware
                 .isSupported(LineageHardwareManager.FEATURE_ANTI_FLICKER);
         mDefaultAntiFlicker = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_defaultAntiFlicker);
+                org.orionos.platform.internal.R.bool.config_defaultAntiFlicker);
 
         if (mUseColorAdjustment) {
             mMaxColor = mHardware.getDisplayColorCalibrationMax();

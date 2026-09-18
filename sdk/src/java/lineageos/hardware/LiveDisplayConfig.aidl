@@ -3,6 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.hardware;
+package orionos.hardware;
 
 parcelable LiveDisplayConfig;

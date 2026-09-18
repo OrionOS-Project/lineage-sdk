@@ -1,14 +1,14 @@
 /*
- * SPDX-FileCopyrightText: 2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
 import android.content.Context;
 import android.os.Handler;
 
-import org.lineageos.platform.internal.LineageBaseFeature;
+import org.orionos.platform.internal.LineageBaseFeature;
 
 public abstract class LineageHealthFeature extends LineageBaseFeature {
     protected static final String TAG = "LineageHealth";

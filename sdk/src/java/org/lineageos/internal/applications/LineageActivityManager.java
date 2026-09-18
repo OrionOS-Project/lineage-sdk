@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2018 The LineageOS project
+ * SPDX-FileCopyrightText: 2018 The OrionOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.applications;
+package org.orionos.internal.applications;
 
 import android.content.Context;
 

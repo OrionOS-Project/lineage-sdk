@@ -1,23 +1,23 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
-import static org.lineageos.platform.internal.display.LiveDisplayService.ALL_CHANGED;
-import static org.lineageos.platform.internal.display.LiveDisplayService.DISPLAY_CHANGED;
-import static org.lineageos.platform.internal.display.LiveDisplayService.MODE_CHANGED;
-import static org.lineageos.platform.internal.display.LiveDisplayService.TWILIGHT_CHANGED;
+import static org.orionos.platform.internal.display.LiveDisplayService.ALL_CHANGED;
+import static org.orionos.platform.internal.display.LiveDisplayService.DISPLAY_CHANGED;
+import static org.orionos.platform.internal.display.LiveDisplayService.MODE_CHANGED;
+import static org.orionos.platform.internal.display.LiveDisplayService.TWILIGHT_CHANGED;
 
 import android.content.Context;
 import android.hardware.display.ColorDisplayManager;
 import android.os.Handler;
 import android.util.Log;
 
-import org.lineageos.platform.internal.LineageBaseFeature;
-import org.lineageos.platform.internal.display.LiveDisplayService.State;
-import org.lineageos.platform.internal.display.TwilightTracker.TwilightState;
+import org.orionos.platform.internal.LineageBaseFeature;
+import org.orionos.platform.internal.display.LiveDisplayService.State;
+import org.orionos.platform.internal.display.TwilightTracker.TwilightState;
 
 import java.util.BitSet;
 

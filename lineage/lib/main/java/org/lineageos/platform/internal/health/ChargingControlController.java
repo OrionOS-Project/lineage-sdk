@@ -1,17 +1,17 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal.health;
+package org.orionos.platform.internal.health;
 
-import static lineageos.health.HealthInterface.MODE_AUTO;
-import static lineageos.health.HealthInterface.MODE_LIMIT;
-import static lineageos.health.HealthInterface.MODE_MANUAL;
-import static lineageos.health.HealthInterface.MODE_NONE;
+import static orionos.health.HealthInterface.MODE_AUTO;
+import static orionos.health.HealthInterface.MODE_LIMIT;
+import static orionos.health.HealthInterface.MODE_MANUAL;
+import static orionos.health.HealthInterface.MODE_NONE;
 
-import static org.lineageos.platform.internal.health.Util.getTimeMillisFromSecondOfDay;
-import static org.lineageos.platform.internal.health.Util.msToString;
+import static org.orionos.platform.internal.health.Util.getTimeMillisFromSecondOfDay;
+import static org.orionos.platform.internal.health.Util.msToString;
 
 import android.app.AlarmManager;
 import android.content.BroadcastReceiver;
@@ -27,13 +27,13 @@ import android.os.ServiceManager;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
-import org.lineageos.platform.internal.R;
-import org.lineageos.platform.internal.health.ccprovider.ChargingControlProvider;
-import org.lineageos.platform.internal.health.ccprovider.Deadline;
-import org.lineageos.platform.internal.health.ccprovider.Limit;
-import org.lineageos.platform.internal.health.ccprovider.Toggle;
+import org.orionos.platform.internal.R;
+import org.orionos.platform.internal.health.ccprovider.ChargingControlProvider;
+import org.orionos.platform.internal.health.ccprovider.Deadline;
+import org.orionos.platform.internal.health.ccprovider.Limit;
+import org.orionos.platform.internal.health.ccprovider.Toggle;
 
 import vendor.lineage.health.IChargingControl;
 
@@ -463,9 +463,9 @@ public class ChargingControlController extends LineageHealthFeature {
     /**
      * Whether the current charging control mode supports supports the mode.
      * Available modes:
-     *     - ${@link lineageos.health.HealthInterface#MODE_AUTO}
-     *     - ${@link lineageos.health.HealthInterface#MODE_MANUAL}
-     *     - ${@link lineageos.health.HealthInterface#MODE_LIMIT}
+     *     - ${@link orionos.health.HealthInterface#MODE_AUTO}
+     *     - ${@link orionos.health.HealthInterface#MODE_MANUAL}
+     *     - ${@link orionos.health.HealthInterface#MODE_LIMIT}
      */
     private boolean isProvideSupportCCMode(int mode) {
         return mCurrentProvider.isChargingControlModeSupported(mode);

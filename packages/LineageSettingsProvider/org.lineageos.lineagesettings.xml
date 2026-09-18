@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <permissions>
-    <privapp-permissions package="org.lineageos.lineagesettings">
+    <privapp-permissions package="org.orionos.lineagesettings">
         <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
 </permissions>

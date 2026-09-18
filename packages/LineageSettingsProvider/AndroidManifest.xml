@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.lineageos.lineagesettings"
+          package="org.orionos.lineagesettings"
           coreApp="true"
           android:sharedUserId="android.uid.system">
     <!-- It is necessary to be a system app in order to update table versions in SystemProperties for
@@ -28,7 +28,7 @@
                   android:authorities="lineagesettings"
                   android:multiprocess="false"
                   android:exported="true"
-                  android:writePermission="lineageos.permission.WRITE_SETTINGS"
+                  android:writePermission="orionos.permission.WRITE_SETTINGS"
                   android:singleUser="true"
                   android:initOrder="100" />
     </application>

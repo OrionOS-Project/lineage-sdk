@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.app;
+package orionos.app;
 
 /** @hide */
 interface ILineageGlobalActions {

@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.internal.notification;
+package org.orionos.internal.notification;
 
 import static android.service.notification.NotificationListenerService.SUPPRESSED_EFFECT_SCREEN_OFF;
 import static android.service.notification.NotificationListenerService.SUPPRESSED_EFFECT_SCREEN_ON;
@@ -27,8 +27,8 @@ import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.Slog;
 
-import lineageos.providers.LineageSettings;
-import lineageos.util.ColorUtils;
+import orionos.providers.LineageSettings;
+import orionos.util.ColorUtils;
 
 import java.util.Map;
 
@@ -98,7 +98,7 @@ public final class LineageNotificationLights {
 
         mPackageNameMappings = new ArrayMap<String, String>();
         final String[] defaultMapping = res.getStringArray(
-                org.lineageos.platform.internal.R.array.notification_light_package_mapping);
+                org.orionos.platform.internal.R.array.notification_light_package_mapping);
         for (String mapping : defaultMapping) {
             String[] map = mapping.split("\\|");
             mPackageNameMappings.put(map[0], map[1]);

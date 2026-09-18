@@ -1,13 +1,13 @@
 /*
- * SPDX-FileCopyrightText: 2018 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.content.Context;
 
-import lineageos.app.LineageContextConstants;
+import orionos.app.LineageContextConstants;
 
 /** @hide */
 public class LineageSettingsService extends LineageSystemService {

@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.platform.internal;
+package org.orionos.platform.internal;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -13,7 +13,7 @@ import android.util.Slog;
 import com.android.server.LocalServices;
 import com.android.server.SystemServiceManager;
 
-import org.lineageos.platform.internal.common.LineageSystemServiceHelper;
+import org.orionos.platform.internal.common.LineageSystemServiceHelper;
 
 /**
  * Base Lineage System Server which handles the starting and states of various Lineage
@@ -60,7 +60,7 @@ public class LineageSystemServer {
         final Context context = mSystemContext;
         final SystemServiceManager ssm = LocalServices.getService(SystemServiceManager.class);
         String[] externalServices = context.getResources().getStringArray(
-                org.lineageos.platform.internal.R.array.config_externalLineageServices);
+                org.orionos.platform.internal.R.array.config_externalLineageServices);
 
         for (String service : externalServices) {
             try {

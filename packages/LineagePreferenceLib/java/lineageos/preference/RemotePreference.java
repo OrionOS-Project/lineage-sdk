@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package lineageos.preference;
+package orionos.preference;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -54,16 +54,16 @@ public class RemotePreference extends SelfRemovingPreference
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.VERBOSE);
 
     public static final String ACTION_REFRESH_PREFERENCE =
-            "lineageos.intent.action.REFRESH_PREFERENCE";
+            "orionos.intent.action.REFRESH_PREFERENCE";
 
     public static final String ACTION_UPDATE_PREFERENCE =
-            "lineageos.intent.action.UPDATE_PREFERENCE";
+            "orionos.intent.action.UPDATE_PREFERENCE";
 
     public static final String META_REMOTE_RECEIVER =
-            "org.lineageos.settings.summary.receiver";
+            "org.orionos.settings.summary.receiver";
 
     public static final String META_REMOTE_KEY =
-            "org.lineageos.settings.summary.key";
+            "org.orionos.settings.summary.key";
 
     public static final String EXTRA_ENABLED = ":lineage:pref_enabled";
     public static final String EXTRA_KEY = ":lineage:pref_key";

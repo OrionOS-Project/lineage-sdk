@@ -1,9 +1,9 @@
 /*
- * SPDX-FileCopyrightText: 2021-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.preference;
+package orionos.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,7 +13,7 @@ import androidx.preference.PreferenceDataStore;
 import com.android.settingslib.widget.GroupSectionDividerMixin;
 import com.android.settingslib.widget.MainSwitchPreference;
 
-import lineageos.providers.LineageSettings;
+import orionos.providers.LineageSettings;
 
 public class LineageSecureSettingMainSwitchPreference extends MainSwitchPreference
         implements GroupSectionDividerMixin {

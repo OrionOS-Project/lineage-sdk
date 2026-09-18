@@ -1,10 +1,10 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package lineageos.app;
+package orionos.app;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -18,12 +18,12 @@ import android.util.Log;
 
 import com.android.internal.policy.IKeyguardService;
 
-import lineageos.profiles.AirplaneModeSettings;
-import lineageos.profiles.BrightnessSettings;
-import lineageos.profiles.ConnectionSettings;
-import lineageos.profiles.LockSettings;
-import lineageos.profiles.RingModeSettings;
-import lineageos.profiles.StreamSettings;
+import orionos.profiles.AirplaneModeSettings;
+import orionos.profiles.BrightnessSettings;
+import orionos.profiles.ConnectionSettings;
+import orionos.profiles.LockSettings;
+import orionos.profiles.RingModeSettings;
+import orionos.profiles.StreamSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -1028,7 +1028,7 @@ public final class Profile implements Parcelable, Comparable {
 
         if (value != null) {
             profileNameResId = context.getResources().getIdentifier(value, "string",
-                    "lineageos.platform");
+                    "orionos.platform");
             if (profileNameResId > 0) {
                 profileName = context.getResources().getString(profileNameResId);
             }

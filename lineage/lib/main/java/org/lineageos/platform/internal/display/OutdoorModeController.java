@@ -1,21 +1,21 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2019-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2019-2024 The OrionOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.platform.internal.display;
+package org.orionos.platform.internal.display;
 
-import static lineageos.hardware.LiveDisplayManager.MODE_AUTO;
-import static lineageos.hardware.LiveDisplayManager.MODE_DAY;
-import static lineageos.hardware.LiveDisplayManager.MODE_OUTDOOR;
+import static orionos.hardware.LiveDisplayManager.MODE_AUTO;
+import static orionos.hardware.LiveDisplayManager.MODE_DAY;
+import static orionos.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Handler;
 
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.hardware.LiveDisplayManager;
-import lineageos.providers.LineageSettings;
+import orionos.hardware.LineageHardwareManager;
+import orionos.hardware.LiveDisplayManager;
+import orionos.providers.LineageSettings;
 
 import java.io.PrintWriter;
 import java.util.BitSet;
@@ -47,11 +47,11 @@ public class OutdoorModeController extends LiveDisplayFeature {
         mUseOutdoorMode = mHardware.isSupported(LineageHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT);
 
         mDefaultOutdoorLux = mContext.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_outdoorAmbientLux);
+                org.orionos.platform.internal.R.integer.config_outdoorAmbientLux);
         mOutdoorLuxHysteresis = mContext.getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_outdoorAmbientLuxHysteresis);
+                org.orionos.platform.internal.R.integer.config_outdoorAmbientLuxHysteresis);
         mDefaultAutoOutdoorMode = mContext.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_defaultAutoOutdoorMode);
+                org.orionos.platform.internal.R.bool.config_defaultAutoOutdoorMode);
     }
 
     @Override
